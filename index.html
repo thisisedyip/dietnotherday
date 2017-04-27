@@ -22,19 +22,17 @@
     <div class="container">
         <div class="section">
 
+            <!-- Food Pyramid -->
             <div class="row">
                 <div class="col m4 s12 center">
                     <img class="responsive-img" src="images/food_pyramid.png"></img>
                 </div>
-
                 <div class="col m8 s12">
-                    <h4>WAIT, WHERE'S THE PYRAMID? <img class="right" src="images/pyramid_stickman.png"/></h4>
+                    <h5>WAIT, WHERE'S THE PYRAMID? <img class="right" src="images/pyramid_stickman.png"/></h5>
                     <p class="light">“Food pyramids” provide the suggested foundations of our diets. Even though most people are familiar with the USDA Food pyramid, each country actually has their own food pyramids!</p>
                     <p class="light">For the U.S., people generally hated the Food Pyramid and found it confusing and misleading, so in 2011, “MyPlate” replaced the U.S. Food Pyramid as the official guide on essential food groups and portion sizes for the american diet!
                         So before we look at what other country food pyramids look like, let’s take a look at the foundations of the U.S. diet!</p>
                     <p class="light disclaimer"><img src="images/cup.png"></img> = Cup (8oz), for daily serving size calculations. </p>
-                    <p class="light disclaimer">Disclaimer: Serving size based on average for 19-30 year olds, but individual serving size should be based on age, gender, and level of physical activity
-                    </p>
                 </div>
             </div>
 
@@ -146,6 +144,86 @@
                     <h4 class="center">OK, WE GET IT, BUT WHAT DOES THE WORLD'S DIET LOOK LIKE?</h4>
                 </div>
             </div>
+
+
+            <!-- Carousel -->
+            <div class="carousel carousel-slider" data-indicators="true">
+                <a class="carousel-item" href="#one!"><img src="images/dairy.jpg" />
+                    <</a>
+                        <a class="carousel-item" href="#two!"><img src="images/fruits.jpg" /></a>
+                        <a class="carousel-item" href="#three!"><img src="images/vegetables.jpg" /></a>
+                        <a class="carousel-item" href="#four!"><img src="images/protein.jpg" /></a>
+                        <a class="carousel-item" href="#four!"><img src="images/grains.jpg" /></a>
+            </div>
+
+            <!-- Tableau Coropleth -->
+            <div class="row">
+                <div class="col s12">
+                    <div class='tableauPlaceholder' id='viz1493274534562' style='position: relative'><noscript><a href='#'><img alt='Map - All Countries, Health ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;Map-AllCountriesHealth&#47;1_rss.png' style='border: none' /></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='idea_sketch_v4&#47;Map-AllCountriesHealth' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;Map-AllCountriesHealth&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1493274534562');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <img class="responsive-img" src="images/food2.png"></img>
+                </div>
+            </div>
+
+
+            <!-- Tableau Line Chart  -->
+            <div class="row">
+                <div class="col s12">
+                    <div class='tableauPlaceholder' id='viz1493274572791' style='position: relative'><noscript><a href='#'><img alt='Health &lt;&gt; Total Cal ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;HealthTotalCal&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='idea_sketch_v4&#47;HealthTotalCal' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;HealthTotalCal&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1493274572791');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </div>
+
+            <!-- D3 Line Chart -->
+            <div class="row">
+                <div class="input-field col s6 push-s3 center">
+                    <p id="menu" class="menuchoice">Select Country:<select class="browser-default">
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <div id="graphic"> </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -153,6 +231,9 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <script src="js/d3linechart.js"></script>
     <script src="js/init.js"></script>
 
 </body>
