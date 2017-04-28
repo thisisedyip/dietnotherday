@@ -4,14 +4,14 @@ svg {
 
 .background path {
     fill: none;
-    stroke: #ccc;
+    stroke: #000000;
     stroke-opacity: .4;
     shape-rendering: crispEdges;
 }
 
 .foreground path {
     fill: none;
-    stroke: steelblue;
+    stroke: #7e57c2;
     stroke-opacity: .7;
 }
 
@@ -23,12 +23,12 @@ svg {
 
 .axis line, .axis path {
     fill: none;
-    stroke: #000;
+    stroke: #000000;
     shape-rendering: crispEdges;
 }
 
 .axis text {
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 1px 0 #000000;
     cursor: move;
 }
 

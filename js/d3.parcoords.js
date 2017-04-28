@@ -51,7 +51,7 @@ d3.csv("data/fao_data_countries.csv", function(error, piers) {
       .attr("d", path)
     .on("mouseover", function(n){
 	d3.select(this).transition().duration(100)
-	    .style({'stroke' : '#F00'})
+	    .style({'stroke' : '#000000'})
       .style({'stroke-width' : '4'});;
 	tooltip.text(n.name);
 	return tooltip.style("visibility", "visible");
@@ -59,7 +59,7 @@ d3.csv("data/fao_data_countries.csv", function(error, piers) {
     .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
     .on("mouseout", function(d){
 	d3.select(this).transition().duration(100)
-	.style({'stroke': 'steelblue' })
+	.style({'stroke': '#7e57c2' })
 	.style({'stroke-width' : '2'});
 	return tooltip.style("visibility", "hidden");
     });
