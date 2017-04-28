@@ -20,7 +20,7 @@ d3.select('#headline')
 var NumbType = d3.format(".2f");
 
 // color array
-var colorscale = ["#b3d2ed", "#f5b5b9", "#eddbc5", "#d4cee3", "daedb9", "#000000"];
+var colorscale = ["#3d8cd1", "#e95d67", "#91c733", "#7f6dab", "c9924f", "#000000"];
 
 //color function pulls from array of colors stored in color.js
 var color = d3.scale.ordinal().range(colorscale);
@@ -39,7 +39,7 @@ var parseDate = d3.time.format("%Y").parse;
 var formatDate = d3.time.format("%Y");
 
 //create an SVG
-var svg = d3.select("#graphic").append("svg")
+var svg = d3.select("#linechart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -65,7 +65,7 @@ var menu = d3.select("select")
     .on("change", change);
 
 //suck in the data, store it in a value called formatted, run the redraw function
-d3.csv("fao_pivot_final.csv", function(data) {
+d3.csv("data/fao_data_top5.csv", function(data) {
     formatted = data;
     countries = [];
     data.map(function(d) {

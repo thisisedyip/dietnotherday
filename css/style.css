@@ -62,16 +62,41 @@ footer.page-footer {
 
 /* Custom CSS Styles */
 
-nav {
-    height: 75px;
+@font-face {
+    font-family: Phosphate;
+    src: url('Phosphate.ttc');
+    }
+
+#title-text {
+  max-height: 70px;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: Phosphate;
+}
+
+h4 {
+    font-weight: 600;
+    font-family: Phosphate;
 }
 
 h5 {
     font-weight: 600;
+    font-family: Phosphate;
 }
 
 h6 {
+    font-weight: 600;
     font-style: italic;
+}
+
+.no-mar-bot {
+  margin-bottom: 0px;
+}
+
+.fix-space-issue {
+  display:block;
 }
 
 .disclaimer {
@@ -82,28 +107,29 @@ h6 {
     max-height: 140px !important;
 }
 
-.col>.row {
-    margin-bottom: 0px !important;
-}
-
 .color-blue {
     background-color: #b3d2ed;
+    /*#3d8cd1*/
 }
 
 .color-pink {
     background-color: #f5b5b9;
+    /*#e95d67*/
 }
 
 .color-green {
     background-color: #daedb9;
+    /*#91c733*/
 }
 
 .color-purple {
     background-color: #d4cee3;
+    /*#7f6dab*/
 }
 
 .color-brown {
     background-color: #eddbc5;
+    /*#c9924f*/
 }
 
 

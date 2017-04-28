@@ -7,40 +7,53 @@
     <title>Diet 'Nother Day</title>
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/d3.parcoords.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-            <img class="responsive-img" src="images/title.png"></img>
+            <img class="responsive-img" id="title-text" src="images/title.png">
         </div>
     </nav>
 
-    <div class="container">
-        <div class="section">
-
-            <!-- Food Pyramid -->
-            <div class="row">
-                <div class="col m4 s12 center">
-                    <img class="responsive-img" src="images/food_pyramid.png"></img>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center red-text text-lighten-2">DIET 'NOTHER DAY</h1>
+                <div class="row center">
+                    <h4 class="header col s12 grey-text text-darken-2">What does good nutrition look like around the world?</h4>
                 </div>
-                <div class="col m8 s12">
-                    <h5>WAIT, WHERE'S THE PYRAMID? <img class="right" src="images/pyramid_stickman.png"/></h5>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/main-image.jpg" alt="Diet 'Nother Day Cover"></div>
+    </div>
+
+
+    <div class="container">
+        <!-- Food Pyramid -->
+        <div class="section">
+            <div class="row no-mar-bot">
+                <div class="col m8 push-m4 s12">
+                    <h4>WAIT, WHERE'S THE PYRAMID? <img class="responsive-img right" src="images/pyramid_stickman.png"/></h4>
                     <p class="light">“Food pyramids” provide the suggested foundations of our diets. Even though most people are familiar with the USDA Food pyramid, each country actually has their own food pyramids!</p>
                     <p class="light">For the U.S., people generally hated the Food Pyramid and found it confusing and misleading, so in 2011, “MyPlate” replaced the U.S. Food Pyramid as the official guide on essential food groups and portion sizes for the american diet!
                         So before we look at what other country food pyramids look like, let’s take a look at the foundations of the U.S. diet!</p>
-                    <p class="light disclaimer"><img src="images/cup.png"></img> = Cup (8oz), for daily serving size calculations. </p>
+                    <p class="light disclaimer"><img class="responsive-img" src="images/cup.png"></img> = Cup (8oz), for daily serving size calculations. </p>
+                </div>
+                <div class="col m4 pull-m8 s12 center no-pad-bot">
+                    <img class="responsive-img fix-space-issue" src="images/food_pyramid.png"></img>
                 </div>
             </div>
 
-            <div class="row color-blue">
+            <div class="row color-blue no-mar-bot">
                 <div class="col s12">
-                    <div class="row">
+                    <div class="row no-mar-bot">
                         <div class="col s12">
-                            <h4>DAIRY <img src="images/cup.png"/><img src="images/cup.png"/><img src="images/cup.png"/> </h4>
+                            <h4>DAIRY <img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/> </h4>
                         </div>
                     </div>
                     <div class="row">
@@ -56,12 +69,19 @@
                 </div>
             </div>
 
-
-            <div class="row color-pink">
+            <div class="row no-mar-bot">
                 <div class="col s12">
-                    <div class="row">
+                    <div class="col m4 s12">
+                        <img class="responsive-img fix-space-issue" src="images/transition1.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row color-pink no-mar-bot">
+                <div class="col s12">
+                    <div class="row no-mar-bot">
                         <div class="col s12">
-                            <h4>FRUITS <img src="images/cup.png"/><img src="images/cup.png"/></h4>
+                            <h4>FRUITS <img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/></h4>
                             <h6>Vary fruits and juice choices - they vary in nutrients!</h6>
                         </div>
                     </div>
@@ -77,11 +97,19 @@
                 </div>
             </div>
 
-            <div class="row color-green">
+            <div class="row no-mar-bot">
                 <div class="col s12">
-                    <div class="row">
+                    <div class="col m4 s12">
+                        <img class="responsive-img fix-space-issue" src="images/transition2.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row color-green no-mar-bot">
+                <div class="col s12">
+                    <div class="row no-mar-bot">
                         <div class="col s12">
-                            <h4>VEGETABLES <img src="images/cup.png"/><img src="images/cup.png"/> to <img src="images/cup.png"/><img src="images/cup.png"/><img src="images/cup.png"/> </h4>
+                            <h4>VEGETABLES <img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/> to <img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/><img class="responsive-img" src="images/cup.png"/> </h4>
 
                         </div>
                     </div>
@@ -98,11 +126,19 @@
                 </div>
             </div>
 
-            <div class="row color-purple">
+            <div class="row no-mar-bot">
                 <div class="col s12">
-                    <div class="row">
+                    <div class="col m4 s12">
+                        <img class="responsive-img fix-space-issue" src="images/transition3.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row color-purple no-mar-bot">
+                <div class="col s12">
+                    <div class="row no-mar-bot">
                         <div class="col s12">
-                            <h4>PROTEIN <img src="images/cup.png"/> </h4>
+                            <h4>PROTEIN <img class="responsive-img" src="images/cup.png"/> </h4>
                         </div>
                     </div>
                     <div class="row">
@@ -119,11 +155,17 @@
                 </div>
             </div>
 
+            <div class="row no-mar-bot">
+                <div class="col m4 s12">
+                    <img class="responsive-img fix-space-issue" src="images/transition4.png">
+                </div>
+            </div>
+
             <div class="row color-brown">
                 <div class="col s12">
-                    <div class="row">
+                    <div class="row no-mar-bot">
                         <div class="col s12">
-                            <h4>GRAINS <img src="images/cup.png"/> </h4>
+                            <h4>GRAINS <img class="responsive-img" src="images/cup.png"/> </h4>
                             <h6>Make half your grains whole grains!!</h6>
                         </div>
                     </div>
@@ -139,34 +181,170 @@
                 </div>
             </div>
 
+        </div>
+        <hr>
+
+        <!-- World Diet -->
+        <div class="section">
             <div class="row">
-                <div class="col m8 push-m2 s12 center">
+                <div class="col s12 center">
                     <h4 class="center">OK, WE GET IT, BUT WHAT DOES THE WORLD'S DIET LOOK LIKE?</h4>
                 </div>
             </div>
 
+            <!-- D3 Parallel Coordinates Chart -->
+            <div class="row">
+                <div class="col s12">
+                    <div id="parcoords" class="parcoords" style="height:460px;"></div>
+                </div>
+            </div>
 
-            <!-- Carousel -->
-            <div class="carousel carousel-slider" data-indicators="true">
-                <a class="carousel-item" href="#one!"><img src="images/dairy.jpg" />
-                    <</a>
-                        <a class="carousel-item" href="#two!"><img src="images/fruits.jpg" /></a>
-                        <a class="carousel-item" href="#three!"><img src="images/vegetables.jpg" /></a>
-                        <a class="carousel-item" href="#four!"><img src="images/protein.jpg" /></a>
-                        <a class="carousel-item" href="#four!"><img src="images/grains.jpg" /></a>
+        </div>
+
+        <!-- Healthy vs Unhealthy -->
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <h4 class="center">191 COUNTRIES WERE GIVEN A "HEALTHINESS SCORE" AND RANKED FROM MOST HEALTHY TO LEAST HEALTHY!</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h4 class="center">...BUT WAIT, HOW IS THE HEALTHINESS SCORE DETERMINED?</h4>
+                </div>
+            </div>
+            <div class="row valign-wrapper">
+                <div class="col m3 s11 center">
+                    <img class="responsive-img" src="images/healthy_foods.png"></img>
+                </div>
+                <div class="col s1 centerr">
+                    <h4 class="center">+</h4>
+                </div>
+                <div class="col m3 s11 center">
+                    <img class="responsive-img" src="images/unhealthy_foods.png"></img>
+                </div>
+                <div class="col s1 center">
+                    <h4 class="center">=</h4>
+                </div>
+                <div class="col m4 s12 center">
+                    <img class="responsive-img" src="images/total_foods.png"></img>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h4 class="center">UNFORTUNATELY, JUST BECAUSE SOMETHING IS IN A FOOD GROUP DOES NOT MAKE IT A HEALTHY FOOD</h4>
+                </div>
+            </div>
+
+            <div class="row valign-wrapper teal lighten-5">
+                <div class="col m6 s12 center">
+                    <img class="responsive-img" src="images/milk_stickman.png"></img>
+                </div>
+                <div class="col m6 s12 center">
+                    <img class="responsive-img" src="images/icecream_stickman.png"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center grey lighten-5">
+                    <h4 class="center">...SO WHAT ARE HEALTHY AND UNHEALTHY FOODS?</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col m6 s12  green lighten-4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5 class="green-text">HEALTHY FOODS</h4>
+                            <img class="responsive-img stickman right" src="images/healthy_stickman.png"/></li>
+                        <li class="collection-item">Fruits</li>
+                        <li class="collection-item">Vegetables</li>
+                        <li class="collection-item">Beans and legumes</li>
+                        <li class="collection-item">Whole grains</li>
+                        <li class="collection-item">Milk</li>
+                        <li class="collection-item">Fish</li>
+                        <li class="collection-item">Dietary fiber</li>
+                    </ul>
+                </div>
+                <div class="col m6 s12  red lighten-4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5 class="red-text">UNHEALTHY FOODS</h5>
+                            <img class="responsive-img stickman right" src="images/unhealthy_stickman.png" /></li>
+                        <li class="collection-item">Unprocessed red meats</li>
+                        <li class="collection-item">Processed meats</li>
+                        <li class="collection-item">Sugar-sweetened beverages</li>
+                        <li class="collection-item">Saturated fat</li>
+                        <li class="collection-item">Trans fat</li>
+                        <li class="collection-item">Dietary cholestrol</li>
+                        <li class="collection-item">Sodium</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+        <!-- Top/Bottom/Middle Healthiest Countries -->
+        <div class="section">
+
+            <div class="row no-mar-bot">
+                <div class="col s12 center">
+                    <h4 class="center">OK, I KNOW THERE ARE 191 RANKED COUNTRIES, BUT FOR OUR STUDY, WE ARE ONLY LOOKING AT:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m4 s12  green lighten-4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5 class="green-text">TOP 5</h4>
+                            <img class="responsive-img stickman right" src="images/top_healthy_stickman.png"/></li>
+                        <li class="collection-item">Myanmar</li>
+                        <li class="collection-item">Sierra Leone</li>
+                        <li class="collection-item">Mali</li>
+                        <li class="collection-item">Guatemala</li>
+                        <li class="collection-item">Rwanda</li>
+                    </ul>
+                </div>
+                <div class="col m4 s12 yellow lighten-4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5 class="yellow-text">MIDDLE 5</h5>
+                            <img class="responsive-img stickman right" src="images/middle_healthy_stickman.png" /></li>
+                        <li class="collection-item">Egypt</li>
+                        <li class="collection-item">Bahamas</li>
+                        <li class="collection-item">Malaysia</li>
+                        <li class="collection-item">Saudi Arabia</li>
+                        <li class="collection-item">Venezuela</li>
+                    </ul>
+                </div>
+                <div class="col m4 s12 red lighten-4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5 class="red-text">BOTTOM 5</h5>
+                            <img class="responsive-img stickman right" src="images/bottom_healthy_stickman.png" /></li>
+                        <li class="collection-item">United States</li>
+                        <li class="collection-item">China</li>
+                        <li class="collection-item">Iceland</li>
+                        <li class="collection-item">Austria</li>
+                        <li class="collection-item">Hungary</li>
+                    </ul>
+                </div>
+
             </div>
 
             <!-- Tableau Coropleth -->
             <div class="row">
-                <div class="col s12 center">
-                    <div class='tableauPlaceholder' id='viz1493274534562' style='position: relative'><noscript><a href='#'><img alt='Map - All Countries, Health ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;Map-AllCountriesHealth&#47;1_rss.png' style='border: none' /></a></noscript>
+                <div class="col s12">
+                    <div class='tableauPlaceholder' id='viz1493357816209' style='position: relative'><noscript><a href='#'><img alt='Map - All Countries, Health ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;Map-AllCountriesHealth&#47;1_rss.png' style='border: none' /></a></noscript>
                         <object class='tableauViz' style='display:none;'>
                             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                             <param name='site_root' value='' />
-                            <param name='name' value='idea_sketch_v4&#47;Map-AllCountriesHealth' />
+                            <param name='name' value='idea_sketch_v6&#47;Map-AllCountriesHealth' />
                             <param name='tabs' value='no' />
                             <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;Map-AllCountriesHealth&#47;1.png' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;Map-AllCountriesHealth&#47;1.png' />
                             <param name='animate_transition' value='yes' />
                             <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
@@ -175,7 +353,7 @@
                             </object>
                     </div>
                     <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1493274534562');
+                        var divElement = document.getElementById('viz1493357816209');
                         var vizElement = divElement.getElementsByTagName('object')[0];
                         vizElement.style.width = '100%';
                         vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
@@ -185,21 +363,14 @@
                     </script>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col s12 center">
-                    <img class="responsive-img" src="images/food2.png"></img>
-                </div>
-            </div>
-
-
+            <br>
             <!-- Tableau Line Chart  -->
             <div class="row">
-                <div class="col s12 center">
-                    <div class='tableauPlaceholder' id='viz1493274572791' style='position: relative'><noscript><a href='#'><img alt='Health &lt;&gt; Total Cal ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;HealthTotalCal&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
-                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='idea_sketch_v4&#47;HealthTotalCal' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v4&#47;HealthTotalCal&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                <div class="col s12">
+                    <div class='tableauPlaceholder' id='viz1493358068559' style='position: relative'><noscript><a href='#'><img alt='Health &lt;&gt; Total Cal ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;HealthTotalCal&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='idea_sketch_v6&#47;HealthTotalCal' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;HealthTotalCal&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
                     <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1493274572791');
+                        var divElement = document.getElementById('viz1493358068559');
                         var vizElement = divElement.getElementsByTagName('object')[0];
                         vizElement.style.width = '100%';
                         vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
@@ -210,12 +381,27 @@
                 </div>
             </div>
 
+        </div>
+        <hr>
+
+        <!-- Consumption change over time -->
+        <div class="section">
             <div class="row">
                 <div class="col s12 center">
-                    <img class="responsive-img" src="images/food3.png"></img>
+                    <h4 class="center">SO TIL NOW, WE'VE BEEN FOCUSING ON COUNTRIES AND THEIR OVERALL HEALTHINESS...</h4>
+                </div>
+            </div>
+            <div class="row brown lighten-5">
+                <div class="col s12 center">
+                    <img class="responsive-img" src="images/comback_stickman.png">
                 </div>
             </div>
 
+            <div class="row no-mar-bot">
+                <div class="col s12 center">
+                    <h4 class="center">BUT NOW LET'S TURN OUR FOCUS ON HOW EACH COUNTRY'S CONSUMPTION PER FOOD GROUP CHANGE OVER TIME</h4>
+                </div>
+            </div>
             <!-- D3 Line Chart -->
             <div class="row">
                 <div class="input-field col s6 push-s3 center">
@@ -226,20 +412,37 @@
             </div>
             <div class="row">
                 <div class="col s12 center">
-                    <div id="graphic"> </div>
+                    <div id="linechart"> </div>
+                </div>
+            </div>
+            <!-- Tableau Bar Chart  -->
+            <div class="row">
+                <div class="col s12">
+                    <div class='tableauPlaceholder' id='viz1493358649543' style='position: relative'><noscript><a href='#'><img alt='Diet &lt;&gt; Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;DietTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='idea_sketch_v6&#47;DietTime' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;idea_sketch_v6&#47;DietTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1493358649543');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
                 </div>
             </div>
 
         </div>
-    </div>
 
+    </div>
 
     <!--  Scripts-->
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.tipsy.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/d3.v3.min.js"></script>
-    <script src="js/jquery.tipsy.js"></script>
-    <script src="js/d3linechart.js"></script>
+    <script src="js/d3.linechart.js"></script>
+    <script src="js/d3.parcoords.js"></script>
     <script src="js/init.js"></script>
 
 </body>
