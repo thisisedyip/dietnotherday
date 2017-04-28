@@ -1,6 +1,8 @@
 (function($) {
     $(function() {
-        $('.button-collapse').sideNav();
+        //Enable Navbar
+        $(".button-collapse").sideNav();
+        //Enable Parallax
         $('.parallax').parallax();
         // Enable Carousel
         $('.carousel.carousel-slider').carousel({fullWidth: true});

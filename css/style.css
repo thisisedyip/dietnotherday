@@ -65,10 +65,14 @@ footer.page-footer {
 @font-face {
     font-family: Phosphate;
     src: url('Phosphate.ttc');
-    }
+}
+
+.nav-wrapper{
+  width: 95% !important;
+}
 
 #title-text {
-  max-height: 70px;
+    max-height: 70px;
 }
 
 h1 {
@@ -92,11 +96,11 @@ h6 {
 }
 
 .no-mar-bot {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .fix-space-issue {
-  display:block;
+    display: block;
 }
 
 .disclaimer {

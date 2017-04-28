@@ -14,18 +14,36 @@
 </head>
 
 <body>
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <img class="responsive-img" id="title-text" src="images/title.png">
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><img class="responsive-img" id="title-text" src="images/title.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#food-pyramid">Food Pyramid</a></li>
+                    <li><a href="#world-diet">World Diet</a></li>
+                    <li><a href="#healthy-foods">Healthy Foods</a></li>
+                    <li><a href="#country-rankings">Country Rankings</a></li>
+                    <li><a href="#consumption-trends">Consumption Trends</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#food-pyramid">Food Pyramid</a></li>
+                    <li><a href="#world-diet">World Diet</a></li>
+                    <li><a href="#healthy-foods">Healthy Foods</a></li>
+                    <li><a href="#country-rankings">Country Rankings</a></li>
+                    <li><a href="#consumption">Consumption</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
                 <h1 class="header center red-text text-lighten-2">DIET 'NOTHER DAY</h1>
                 <div class="row center">
-                    <h4 class="header col s12 grey-text text-darken-2">What does good nutrition look like around the world?</h4>
+                    <h4 class="header col s12 grey-text text-darken-2">What does nutrition look like around the world?</h4>
                 </div>
             </div>
         </div>
@@ -36,6 +54,7 @@
     <div class="container">
         <!-- Food Pyramid -->
         <div class="section">
+            <a name="food-pyramid"></a>
             <div class="row no-mar-bot">
                 <div class="col m8 push-m4 s12">
                     <h4>WAIT, WHERE'S THE PYRAMID? <img class="responsive-img right" src="images/pyramid_stickman.png"/></h4>
@@ -186,6 +205,7 @@
 
         <!-- World Diet -->
         <div class="section">
+            <a name="world-diet"></a>
             <div class="row">
                 <div class="col s12 center">
                     <h4 class="center">OK, WE GET IT, BUT WHAT DOES THE WORLD'S DIET LOOK LIKE?</h4>
@@ -194,8 +214,8 @@
 
             <!-- D3 Parallel Coordinates Chart -->
             <div class="row">
-                <div class="col s12">
-                    <div id="parcoords" class="parcoords" style="height:460px;"></div>
+                <div class="col s12 center">
+                    <div id="parcoords" class="parcoords" style="height:480px;"></div>
                 </div>
             </div>
 
@@ -204,6 +224,7 @@
 
         <!-- Healthy vs Unhealthy -->
         <div class="section">
+            <a name="healthy-foods"></a>
             <div class="row">
                 <div class="col s12 center">
                     <h4 class="center">191 COUNTRIES WERE GIVEN A "HEALTHINESS SCORE" AND RANKED FROM MOST HEALTHY TO LEAST HEALTHY!</h4>
@@ -215,7 +236,7 @@
                     <h4 class="center">...BUT WAIT, HOW IS THE HEALTHINESS SCORE DETERMINED?</h4>
                 </div>
             </div>
-            <div class="row valign-wrapper">
+            <div class="row valign-wrapper cyan lighten-5">
                 <div class="col m3 s11 center">
                     <img class="responsive-img" src="images/healthy_foods.png"></img>
                 </div>
@@ -289,7 +310,7 @@
 
         <!-- Top/Bottom/Middle Healthiest Countries -->
         <div class="section">
-
+            <a name="country-rankings"></a>
             <div class="row no-mar-bot">
                 <div class="col s12 center">
                     <h4 class="center">OK, I KNOW THERE ARE 191 RANKED COUNTRIES, BUT FOR OUR STUDY, WE ARE ONLY LOOKING AT:</h4>
@@ -387,6 +408,7 @@
 
         <!-- Consumption change over time -->
         <div class="section">
+            <a name="consumption-trends"></a>
             <div class="row">
                 <div class="col s12 center">
                     <h4 class="center">SO TIL NOW, WE'VE BEEN FOCUSING ON COUNTRIES AND THEIR OVERALL HEALTHINESS...</h4>
@@ -434,6 +456,7 @@
             </div>
 
         </div>
+        <hr>
 
     </div>
 
