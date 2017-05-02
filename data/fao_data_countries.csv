@@ -1,4 +1,4 @@
-name,Dairy,Fruits,Vegetables,Protein,Grain,Grand Total
+name,Dairy,Fruits,Vegetables,Protein,Grain,Total Calories
 Afghanistan,100,51,17,73,1561,2090
 Albania,533,221,151,391,1145,3193
 Algeria,227,215,124,130,1678,3296
@@ -24,7 +24,7 @@ Brazil,252,113,36,499,969,3263
 Brunei Darussalam,135,73,72,464,1313,2985
 Bulgaria,260,92,38,274,1102,2829
 Burkina Faso,61,8,13,83,1740,2720
-Cï¿½ï¿½te d'Ivoire,12,171,36,90,971,2799
+C¥Ë_¥Ë_te d'Ivoire,12,171,36,90,971,2799
 Cabo Verde,200,81,86,213,1160,2609
 Cambodia,6,34,23,185,1654,2477
 Cameroon,28,214,65,88,1013,2671
@@ -174,4 +174,3 @@ Viet Nam,27,86,95,486,1552,2745
 Yemen,55,68,21,114,1356,2223
 Zambia,15,11,19,82,1135,1930
 Zimbabwe,49,18,11,97,1146,2110
-,,,,0,,

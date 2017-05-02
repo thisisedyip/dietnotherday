@@ -62,10 +62,10 @@ footer.page-footer {
 
 /* Custom CSS Styles */
 
-@font-face {
+/*@font-face {
     font-family: Phosphate;
     src: url('Phosphate.ttc');
-}
+}*/
 
 .nav-wrapper{
   width: 95% !important;
@@ -77,22 +77,40 @@ footer.page-footer {
 
 h1 {
     font-weight: 600;
-    font-family: Phosphate;
+    font-family: Futura;
 }
 
 h4 {
     font-weight: 600;
-    font-family: Phosphate;
+    font-family: Futura;
 }
 
 h5 {
     font-weight: 600;
-    font-family: Phosphate;
+    font-family: Futura;
 }
 
 h6 {
     font-weight: 600;
     font-style: italic;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Futura;
+}
+
+.blue-texty {
+  color: #35a9e3;
+}
+
+.purple-texty {
+  color: #7054a7;
+}
+
+.light {
+ font-size: 16px;
 }
 
 .no-mar-bot {
@@ -134,6 +152,38 @@ h6 {
 .color-brown {
     background-color: #eddbc5;
     /*#c9924f*/
+}
+
+.vs {
+  max-height: 350px;
+}
+
+.table-of-contents a {
+    display: block;
+    height: 56px;
+    line-height: 56px;
+}
+
+@media only screen and (min-width: 601px) {
+    .table-of-contents a {
+        display: block;
+        height: 64px;
+        line-height: 64px;
+    }
+}
+
+.table-of-contents a:hover {
+    border-left: none;
+}
+
+.table-of-contents a.active {
+    border-left: none;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section.scrollspy {
+    min-height: 92vh;
 }
 
 
